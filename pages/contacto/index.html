@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hydra404</title>
+    <meta name="description" content="Contacta con Hydra404 para discutir tu proyecto de infraestructura tecnológica. WhatsApp, email y formulario de contacto.">
+    <meta name="keywords" content="hydra404, contacto, consulta, proyecto, desarrollo web, infraestructura">
+    <link rel="icon" type="image/png" href="../../assets/img/logo-h404.png">
+    <link rel="stylesheet" href="../../src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+    <div id="app">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-section">
+                    <a href="../../index.html" class="brand-name" aria-label="Hydra404">
+                        <span class="logo-main">HYDRA</span>
+                        <span class="logo-sub" aria-hidden="true">404</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../../index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="../informacion/index.html" class="nav-link">Información</a></li>
+                        <li><a href="../portafolio/index.html" class="nav-link">Portafolio</a></li>
+                        <li><a href="index.html" class="nav-link active">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+                        <div class="theme-icon"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section hero-section">
+                <div class="section-container" data-animate="fade-up">
+                    <h1 class="hero-title">Contacto</h1>
+                    <p class="hero-subtitle">Hablemos sobre tu próximo proyecto</p>
+                </div>
+            </section>
+
+            <section class="section contact-section">
+                <div class="section-container">
+                    <div class="contact-intro" data-animate="fade-up">
+                        <p>Elige la vía que prefieras y coordinemos los próximos pasos de tu proyecto. Respondemos con claridad y proponemos un plan de acción concreto.</p>
+                    </div>
+                    <div class="contact-grid" data-animate="fade-up">
+                        <div class="contact-methods">
+                            <article class="contact-card">
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/092782088" class="contact-chip" target="_blank" rel="noopener">
+                                    <span class="contact-symbol whatsapp" aria-hidden="true"></span>
+                                    <span class="contact-chip-text">
+                                        <strong>092 782 088</strong>
+                                        <small>Respuesta inmediata</small>
+                                    </span>
+                                </a>
+                            </article>
+                            <article class="contact-card">
+                                <h3>Email</h3>
+                                <button type="button" class="contact-chip" data-email-trigger>
+                                    <span class="contact-symbol mail" aria-hidden="true"></span>
+                                    <span class="contact-chip-text">
+                                        <strong>guzmanhydra@gmail.com</strong>
+                                        <small>Elige tu cliente preferido</small>
+                                    </span>
+                                </button>
+                            </article>
+                        </div>
+                    <div class="contact-cta">
+                        <div class="cta-content">
+                            <h3>¿Listo para comenzar tu proyecto?</h3>
+                            <p>Agenda una consulta gratuita para discutir tus necesidades y cómo podemos ayudarte a alcanzar tus objetivos.</p>
+                            <div class="cta-buttons">
+                                    <a href="https://wa.me/092782088" class="cta-button primary" target="_blank" rel="noopener">
+                                    Consulta por WhatsApp
+                                </a>
+                                    <button class="cta-button secondary" type="button" data-email-trigger>
+                                        Abrir opciones de email
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo" aria-label="Hydra404">
+                            <span class="logo-main">HYDRA</span>
+                            <span class="logo-sub" aria-hidden="true">404</span>
+                        </h3>
+                        <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+                            <span class="instagram-icon" aria-hidden="true"></span>
+                            @hydra404_dev
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+                    <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal de selección de email -->
+    <div id="emailModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle" aria-hidden="true" tabindex="-1">
+        <div class="modal-content email-modal-content">
+            <div class="modal-video">
+                <div class="modal-gif" data-gif="../../assets/fondos/fondo-modal.gif"></div>
+            </div>
+            <div class="modal-header">
+                <h3 id="emailModalTitle">Seleccionar cliente de email</h3>
+                <button class="modal-close" data-email-close aria-label="Cerrar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Elige una opción para abrir tu plataforma de correo con el mensaje listo para enviar.</p>
+                <div class="email-options">
+                    <a href="mailto:guzmanhydra@gmail.com?subject=Consulta%20Hydra404" class="email-option" data-email-option="default">
+                        <span class="email-badge default" aria-hidden="true"></span>
+                        <span class="email-text">
+                            <strong>Cliente predeterminado</strong>
+                            <small>Usa la app configurada en tu dispositivo</small>
+                        </span>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=guzmanhydra@gmail.com&su=Consulta%20Hydra404" class="email-option" target="_blank" rel="noopener" data-email-option="gmail">
+                        <span class="email-badge gmail" aria-hidden="true"></span>
+                        <span class="email-text">
+                            <strong>Gmail</strong>
+                            <small>Redirige a Google Mail</small>
+                        </span>
+                    </a>
+                    <a href="https://outlook.live.com/mail/0/deeplink/compose?to=guzmanhydra@gmail.com&subject=Consulta%20Hydra404" class="email-option" target="_blank" rel="noopener" data-email-option="outlook">
+                        <span class="email-badge outlook" aria-hidden="true"></span>
+                        <span class="email-text">
+                            <strong>Outlook</strong>
+                            <small>Abre Outlook Live</small>
+                        </span>
+                    </a>
+                    <a href="https://compose.mail.yahoo.com/?to=guzmanhydra@gmail.com&subject=Consulta%20Hydra404" class="email-option" target="_blank" rel="noopener" data-email-option="yahoo">
+                        <span class="email-badge yahoo" aria-hidden="true"></span>
+                        <span class="email-text">
+                            <strong>Yahoo Mail</strong>
+                            <small>Componer en Yahoo</small>
+                        </span>
+                    </a>
+                    <a href="mailto:guzmanhydra@gmail.com?subject=Consulta%20Hydra404" class="email-option" data-email-option="otros">
+                        <span class="email-badge other" aria-hidden="true"></span>
+                        <span class="email-text">
+                            <strong>Otros</strong>
+                            <small>Copia la dirección y utiliza tu proveedor</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../../src/scripts/main.js"></script>
+</body>
+</html>
+

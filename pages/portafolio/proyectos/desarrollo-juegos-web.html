@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo de Juegos Web - Hydra404</title>
+  <meta name="description" content="Portafolio de juegos web interactivos: Ajedrez con IA minimax y Ruleta 21 con mecánicas únicas, desarrollados por Hydra404.">
+  <link rel="icon" type="image/png" href="../../../assets/img/logo-h404.png">
+  <link rel="stylesheet" href="../../../src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+  <div id="app">
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="../../../index.html" class="brand-name" aria-label="Hydra404">
+            <span class="logo-main">HYDRA</span>
+            <span class="logo-sub" aria-hidden="true">404</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../../../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../../informacion/index.html" class="nav-link">Información</a></li>
+            <li><a href="../index.html" class="nav-link active">Portafolio</a></li>
+            <li><a href="../../contacto/index.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+            <div class="theme-icon"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section project-hero" id="inicio">
+        <div class="section-container project-hero__grid">
+          <div class="project-hero__content" data-animate="fade-up">
+            <h1 class="project-title">Desarrollo de Juegos Web</h1>
+            <p class="project-lead">Diseño y programación de juegos browser-based con lógica compleja, inteligencia artificial y experiencias de usuario pulidas que funcionan sin instalación ni plugins.</p>
+            <div class="project-hero__cta">
+              <a href="#detalles" class="cta-button primary">Explorar detalles</a>
+              <a href="../index.html" class="cta-button secondary">Volver al portafolio</a>
+            </div>
+          </div>
+          <aside class="project-hero__meta" data-animate="fade-left">
+            <div class="project-meta-card">
+              <span class="project-meta-label">Categoría</span>
+              <span class="project-meta-value">Juegos interactivos web</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Alcance</span>
+              <span class="project-meta-value">Juegos funcionales publicados y jugables en navegador</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Stack de desarrollo</span>
+              <ul class="project-meta-list">
+                <li>JavaScript vanilla con OOP y algoritmos de búsqueda</li>
+                <li>CSS3 con animaciones y estados interactivos</li>
+                <li>Canvas API y manipulación del DOM optimizada</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="detalles">
+        <div class="section-container">
+          <div class="project-overview__grid">
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">EskiJedrez - Ajedrez Completo</h2>
+              <p class="project-section-text">Motor de ajedrez con todas las reglas oficiales, algoritmo minimax para IA con cuatro niveles de dificultad y notación algebraica estándar.</p>
+              <ul class="project-list">
+                <li>Implementación completa de reglas: enroque, captura al paso, promoción</li>
+                <li>IA basada en minimax con poda alfa-beta y diferentes profundidades</li>
+                <li>Modos: Jugador vs Jugador y Jugador vs IA (Kira)</li>
+                <li>Historial de movimientos con notación estándar y navegación</li>
+                <li>Sistema de captura de piezas y temporizador opcional</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Ruleta 21 - Juego de Cartas</h2>
+              <p class="project-section-text">Variante original de 21 (Blackjack) con sistema único de "ritos" que añaden estrategia y tensión a cada mano.</p>
+              <ul class="project-list">
+                <li>Sistema de ritos: PIDO, PIDO Y CAMBIO, DEJO (mecánicas exclusivas)</li>
+                <li>IA adaptativa que ajusta su estrategia según el estado del juego</li>
+                <li>Gestión automática de ases (11 o 1 según conveniencia)</li>
+                <li>Sistema de prorroga para desempates y mayor emoción</li>
+                <li>Visualización fluida de cartas con animaciones profesionales</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Características técnicas</h2>
+              <p class="project-section-text">Ambos juegos destacan por arquitectura escalable y optimización de rendimiento.</p>
+              <ul class="project-list">
+                <li>Arquitectura modular con separación clara de lógica y UI</li>
+                <li>Renderizado optimizado sin frameworks pesados</li>
+                <li>Responsive design para móviles, tablets y escritorio</li>
+                <li>Almacenamiento local para guardar partidas y preferencias</li>
+                <li>Controles táctiles y por teclado con accesibilidad ARIA</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-container">
+          <h2 class="section-title" data-animate="fade-up">Juegos Disponibles</h2>
+          <p class="section-subtitle" data-animate="fade-up">Prueba los juegos en vivo directamente desde el navegador.</p>
+          <div class="project-links" data-animate="fade-up">
+            <a href="https://guzman-dex.github.io/EskiJedrez/" class="cta-button primary" target="_blank" rel="noopener">Jugar EskiJedrez</a>
+            <a href="https://guzman-dex.github.io/Ruleta/" class="cta-button primary" target="_blank" rel="noopener">Jugar Ruleta 21</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-logo" aria-label="Hydra404">
+              <span class="logo-main">HYDRA</span>
+              <span class="logo-sub" aria-hidden="true">404</span>
+            </h3>
+            <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+              <span class="instagram-icon" aria-hidden="true"></span>
+              @hydra404_dev
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+          <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="../../../src/sections/ProjectDetail.js"></script>
+  <script type="module" src="../../../src/scripts/main.js"></script>
+</body>
+</html>
+

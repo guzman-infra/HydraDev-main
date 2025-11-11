@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Administración - Hydra404</title>
+  <meta name="description" content="Caso de éxito: plataforma de administración integral con control de inventario, finanzas y automatizaciones diseñadas por Hydra404.">
+  <link rel="icon" type="image/png" href="../../../assets/img/logo-h404.png">
+  <link rel="stylesheet" href="../../../src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+  <div id="app">
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="../../../index.html" class="brand-name" aria-label="Hydra404">
+            <span class="logo-main">HYDRA</span>
+            <span class="logo-sub" aria-hidden="true">404</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../../../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../../informacion/index.html" class="nav-link">Información</a></li>
+            <li><a href="../index.html" class="nav-link active">Portafolio</a></li>
+            <li><a href="../../contacto/index.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+            <div class="theme-icon"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section project-hero" id="inicio">
+        <div class="section-container project-hero__grid">
+          <div class="project-hero__content" data-animate="fade-up">
+            <h1 class="project-title">Sistema de Administración</h1>
+            <p class="project-lead">Una plataforma centralizada para coordinar ventas, inventarios, finanzas y operaciones en múltiples sucursales con reportes inteligentes y trazabilidad completa.</p>
+            <div class="project-hero__cta">
+              <a href="#detalles" class="cta-button primary">Explorar detalles</a>
+              <a href="../index.html" class="cta-button secondary">Volver al portafolio</a>
+            </div>
+          </div>
+          <aside class="project-hero__meta" data-animate="fade-left">
+            <div class="project-meta-card">
+              <span class="project-meta-label">Industria</span>
+              <span class="project-meta-value">Retail y puntos de venta</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Modalidad</span>
+              <span class="project-meta-value">SaaS multi-sucursal con despliegue cloud híbrido</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Stack principal</span>
+              <ul class="project-meta-list">
+                <li>NestJS y GraphQL para servicios financieros</li>
+                <li>React + Zustand para dashboards en vivo</li>
+                <li>PostgreSQL replicado y colas con Redis</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="detalles">
+        <div class="section-container">
+          <div class="project-overview__grid">
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Objetivos alcanzados</h2>
+              <p class="project-section-text">El negocio necesitaba unificar datos de ventas y inventario en tiempo real para tomar decisiones basadas en evidencia.</p>
+              <ul class="project-list">
+                <li>Consolidación de 18 sucursales en dashboards únicos.</li>
+                <li>Reducción del 42% en quiebres de stock gracias a alertas predictivas.</li>
+                <li>Reportes financieros listos en 90 segundos con exportación automática.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Arquitectura funcional</h2>
+              <p class="project-section-text">Diseñamos capas desacopladas enfocadas en resiliencia, auditoría y extensibilidad.</p>
+              <ul class="project-list">
+                <li>Microservicios para ventas, catálogo, logística y contabilidad.</li>
+                <li>Integraciones bidireccionales con ERP y proveedores externos.</li>
+                <li>Motor de reglas configurable para flujos de autorización.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Experiencia de usuario</h2>
+              <p class="project-section-text">Unificamos interfaces complejas en un entorno accesible y responsivo.</p>
+              <ul class="project-list">
+                <li>Modo claro y oscuro sincronizados con preferencias del usuario.</li>
+                <li>Componentes reutilizables para carga masiva y validaciones instantáneas.</li>
+                <li>Panel móvil para gerentes con KPIs críticos en un vistazo.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-container">
+          <h2 class="section-title" data-animate="fade-up">Medios y recorridos</h2>
+          <p class="section-subtitle" data-animate="fade-up">Demostraciones visuales y funcionales listas para presentar a stakeholders.</p>
+          <div class="project-media-grid" data-project-media-grid></div>
+          <div class="project-gallery" data-project-highlights></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-logo" aria-label="Hydra404">
+              <span class="logo-main">HYDRA</span>
+              <span class="logo-sub" aria-hidden="true">404</span>
+            </h3>
+            <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+          </div>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+                            <span class="instagram-icon" aria-hidden="true"></span>
+                            @hydra404_dev
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+                    <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+                </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="application/json" id="projectMediaData">
+    {
+      "id": "sistema-administracion",
+      "media": [
+        {
+          "id": "dashboard",
+          "type": "video",
+          "title": "Vista Dashboard Principal",
+          "description": "Recorrido en video del tablero financiero con filtros dinámicos, proyecciones de flujo y alertas inteligentes.",
+          "src": "../../../projects/sistema-administracion/media/dashboard-general.mp4",
+          "poster": "../../../projects/sistema-administracion/media/dashboard-general-poster.jpg",
+          "thumbnail": "../../../projects/sistema-administracion/media/dashboard-general-thumb.jpg"
+        },
+        {
+          "id": "inventario",
+          "type": "video",
+          "title": "Flujo de Inventario",
+          "description": "Secuencia paso a paso del flujo de control de inventario, recepción de mercancía y conciliación con proveedores.",
+          "src": "../../../projects/sistema-administracion/media/inventario-operativo.mp4",
+          "poster": "../../../projects/sistema-administracion/media/inventario-operativo-poster.jpg",
+          "thumbnail": "../../../projects/sistema-administracion/media/inventario-operativo-thumb.jpg"
+        },
+        {
+          "id": "movil",
+          "type": "image",
+          "title": "Vistas móviles",
+          "description": "Previsualizaciones optimizadas para managers móviles con indicadores críticos y aprobaciones rápidas.",
+          "src": "../../../projects/sistema-administracion/media/panel-movil.png",
+          "thumbnail": "../../../projects/sistema-administracion/media/panel-movil-thumb.png"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Módulo financiero",
+          "description": "Dashboards comparativos, auditoría de movimientos y generación automática de reportes fiscales."
+        },
+        {
+          "title": "Panel de inventario",
+          "description": "Matrices de traslados, rotación por tienda y alertas tempranas de ruptura de stock."
+        },
+        {
+          "title": "Automatizaciones",
+          "description": "Recetas personalizadas para cierres contables, pedidos y sincronización omnicanal."
+        }
+      ]
+    }
+  </script>
+  <script type="module" src="../../../src/sections/ProjectDetail.js"></script>
+  <script type="module" src="../../../src/scripts/main.js"></script>
+</body>
+</html>

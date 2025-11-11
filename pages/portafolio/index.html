@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Hydra404</title>
+    <meta name="description" content="Explora nuestro portafolio de proyectos de desarrollo web, UI/UX, software personalizado y automatizaciones.">
+    <meta name="keywords" content="hydra404, portafolio, proyectos, desarrollo web, UI/UX, software, automatizaciones">
+    <link rel="icon" type="image/png" href="../../assets/img/logo-h404.png">
+    <link rel="stylesheet" href="../../src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+    <div id="app">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo-section">
+                    <a href="../../index.html" class="brand-name" aria-label="Hydra404">
+                        <span class="logo-main">HYDRA</span>
+                        <span class="logo-sub" aria-hidden="true">404</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../../index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="../informacion/index.html" class="nav-link">Información</a></li>
+                        <li><a href="index.html" class="nav-link active">Portafolio</a></li>
+                        <li><a href="../contacto/index.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+                        <div class="theme-icon"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section hero-section">
+                <div class="section-container" data-animate="fade-up">
+                    <h1 class="hero-title">Portafolio</h1>
+                    <p class="hero-subtitle">Descubre nuestros proyectos más destacados</p>
+                </div>
+            </section>
+
+            <section class="section portfolio-section">
+                <div class="section-container">
+                    <div class="portfolio-header" data-animate="fade-up">
+                        <div>
+                            <h2 class="section-title">Proyectos a medida</h2>
+                            <p class="section-subtitle">Casos reales que combinan automatización, visualización y experiencia de usuario.</p>
+                        </div>
+                        <button class="filter-toggle" id="openFilters">Filtros</button>
+                    </div>
+                    <div class="portfolio-grid" id="portfolioGrid" aria-live="polite" data-animate="fade-up">
+                        <article class="portfolio-card">
+                            <h3>Sistema de Administración</h3>
+                            <p>Monitoreo de ventas, inventario y finanzas en tiempo real para múltiples sucursales.</p>
+                            <ul class="portfolio-card-highlights">
+                                <li>Indicadores financieros consolidados</li>
+                                <li>Permisos y trazabilidad por usuario</li>
+                                <li>Reportes automáticos en PDF y hojas de cálculo</li>
+                            </ul>
+                            <ul class="portfolio-card-tags">
+                                <li>Software</li>
+                                <li>Administración</li>
+                                <li>Dashboard</li>
+                            </ul>
+                        </article>
+                        <article class="portfolio-card">
+                            <h3>Automatización Operativa</h3>
+                            <p>Automatiza tareas repetitivas, integra APIs críticas y genera reportes auditables.</p>
+                            <ul class="portfolio-card-highlights">
+                                <li>Bots con validaciones inteligentes</li>
+                                <li>Integración con sistemas internos</li>
+                                <li>Alertas proactivas y bitácora automatizada</li>
+                            </ul>
+                            <ul class="portfolio-card-tags">
+                                <li>Automatización</li>
+                                <li>RPA</li>
+                                <li>Integraciones</li>
+                            </ul>
+                        </article>
+                        <article class="portfolio-card">
+                            <h3>Dashboard Estratégico</h3>
+                            <p>Dashboard responsive para visualizar y filtrar datos clave de negocio.</p>
+                            <ul class="portfolio-card-highlights">
+                                <li>Visualizaciones interactivas</li>
+                                <li>Modo claro y oscuro sincronizados</li>
+                                <li>Exportación segmentada de datasets</li>
+                            </ul>
+                            <ul class="portfolio-card-tags">
+                                <li>UI/UX</li>
+                                <li>Dashboard</li>
+                                <li>Responsive</li>
+                            </ul>
+                        </article>
+                        <article class="portfolio-card">
+                            <h3>Plataforma Educativa</h3>
+                            <p>Ecosistema para gestión de cursos, evaluaciones adaptativas y analítica de progreso.</p>
+                            <ul class="portfolio-card-highlights">
+                                <li>Roles para estudiantes, tutores y administradores</li>
+                                <li>Streaming y recursos descargables</li>
+                                <li>Analítica de engagement académico</li>
+                            </ul>
+                            <ul class="portfolio-card-tags">
+                                <li>Educación</li>
+                                <li>Multiplataforma</li>
+                                <li>Desarrollo web</li>
+                            </ul>
+                        </article>
+                        <article class="portfolio-card">
+                            <h3>Desarrollo de Juegos Web</h3>
+                            <p>Juegos interactivos con lógica compleja e IA: Ajedrez con minimax y Ruleta 21 con ritos.</p>
+                            <ul class="portfolio-card-highlights">
+                                <li>Motor de ajedrez con IA en 4 niveles de dificultad</li>
+                                <li>Ruleta 21 con sistema único de ritos estratégicos</li>
+                                <li>100% responsive con controles táctiles y teclado</li>
+                            </ul>
+                            <ul class="portfolio-card-tags">
+                                <li>Juegos</li>
+                                <li>JavaScript</li>
+                                <li>IA</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="cta-section" data-animate="fade-up">
+                        <h3>¿Te interesa alguno de nuestros proyectos?</h3>
+                        <p>Contáctanos para discutir cómo podemos crear algo similar para tu empresa.</p>
+                        <div class="cta-buttons">
+                            <a href="../contacto/index.html" class="cta-button primary">
+                                Solicitar Cotización
+                            </a>
+                            <a href="../informacion/index.html" class="cta-button secondary">
+                                Más Información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="filtersModal" class="modal filters-modal" role="dialog" aria-modal="true" aria-labelledby="filtersTitle" aria-hidden="true" tabindex="-1">
+            <div class="modal-content">
+                <div class="modal-video">
+                    <div class="modal-gif" data-gif="../../assets/fondos/fondo-modal.gif"></div>
+                </div>
+                <div class="modal-header">
+                    <h3 id="filtersTitle">Filtros de portafolio</h3>
+                    <button class="modal-close" id="closeFilters" aria-label="Cerrar filtros">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="filter-panel" data-group="category">
+                        <h4>Categoría</h4>
+                        <div class="filter-chip-group" data-filter-group="category"></div>
+                    </div>
+                    <div class="filter-panel" data-group="focus">
+                        <h4>Enfoque</h4>
+                        <div class="filter-chip-group" data-filter-group="focus"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-button tertiary" id="clearFilters">Limpiar</button>
+                    <button class="modal-button primary" id="applyFilters">Aplicar</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3 class="footer-logo" aria-label="Hydra404">
+                            <span class="logo-main">HYDRA</span>
+                            <span class="logo-sub" aria-hidden="true">404</span>
+                        </h3>
+                        <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+                            <span class="instagram-icon" aria-hidden="true"></span>
+                            @hydra404_dev
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+                    <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="../../src/scripts/main.js"></script>
+</body>
+</html>
+

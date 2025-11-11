@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Estratégico - Hydra404</title>
+  <meta name="description" content="Caso de diseño de dashboard responsive: visualizaciones interactivas, filtros avanzados y analítica accionable creadas por Hydra404.">
+  <link rel="icon" type="image/png" href="../../../assets/img/logo-h404.png">
+  <link rel="stylesheet" href="../../../src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+  <div id="app">
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="../../../index.html" class="brand-name" aria-label="Hydra404">
+            <span class="logo-main">HYDRA</span>
+            <span class="logo-sub" aria-hidden="true">404</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../../../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../../informacion/index.html" class="nav-link">Información</a></li>
+            <li><a href="../index.html" class="nav-link active">Portafolio</a></li>
+            <li><a href="../../contacto/index.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+            <div class="theme-icon"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section project-hero" id="inicio">
+        <div class="section-container project-hero__grid">
+          <div class="project-hero__content" data-animate="fade-up">
+            <h1 class="project-title">Dashboard Estratégico</h1>
+            <p class="project-lead">Visualizaciones interactivas y adaptables para mapear indicadores de negocio, filtrar insights en segundos y compartir tableros con los equipos adecuados.</p>
+            <div class="project-hero__cta">
+              <a href="#detalles" class="cta-button primary">Explorar detalles</a>
+              <a href="../index.html" class="cta-button secondary">Volver al portafolio</a>
+            </div>
+          </div>
+          <aside class="project-hero__meta" data-animate="fade-left">
+            <div class="project-meta-card">
+              <span class="project-meta-label">Departamento</span>
+              <span class="project-meta-value">Inteligencia de negocio (BI) corporativa</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Resultados</span>
+              <span class="project-meta-value">Tiempo de análisis reducido de 3 horas a 12 minutos.</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Tecnologías</span>
+              <ul class="project-meta-list">
+                <li>Next.js + Recharts para visualizaciones reactivas</li>
+                <li>Tailwind CSS con sistema de diseño personalizado</li>
+                <li>API GraphQL sobre Data Warehouse en BigQuery</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="detalles">
+        <div class="section-container">
+          <div class="project-overview__grid">
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Diseño centrado en el dato</h2>
+              <p class="project-section-text">Definimos jerarquía visual y storytelling para que cada dato tenga contexto.</p>
+              <ul class="project-list">
+                <li>Layouts responsivos con componentes modulares.</li>
+                <li>Estados vacíos con recomendaciones accionables.</li>
+                <li>Indicadores comparativos con meta y tendencia.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Interacción avanzada</h2>
+              <p class="project-section-text">Los usuarios pueden modificar parámetros y compartir tableros sin perder consistencia.</p>
+              <ul class="project-list">
+                <li>Filtros combinados, bookmarks y vistas favoritas.</li>
+                <li>Exportación segmentada en PDF, CSV y presentaciones.</li>
+                <li>Comentarios en vivo con menciones a equipos.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Conectividad</h2>
+              <p class="project-section-text">Consolidamos múltiples fuentes de datos con baja latencia.</p>
+              <ul class="project-list">
+                <li>Sincronización con CRM, ERP y plataformas de marketing.</li>
+                <li>Actualizaciones programadas y recarga manual bajo demanda.</li>
+                <li>API pública para integrar métricas en otros productos.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-container">
+          <h2 class="section-title" data-animate="fade-up">Vistas previas</h2>
+          <p class="section-subtitle" data-animate="fade-up">Material listo para presentar a stakeholders de operaciones, marketing y dirección.</p>
+          <div class="project-media-grid" data-project-media-grid></div>
+          <div class="project-gallery" data-project-highlights></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-logo" aria-label="Hydra404">
+              <span class="logo-main">HYDRA</span>
+              <span class="logo-sub" aria-hidden="true">404</span>
+            </h3>
+            <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+              <span class="instagram-icon" aria-hidden="true"></span>
+              @hydra404_dev
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+          <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="application/json" id="projectMediaData">
+    {
+      "id": "dashboard-estrategico",
+      "media": [
+        {
+          "id": "tablero",
+          "type": "video",
+          "title": "Tablero General",
+          "description": "Video que recorre el tablero principal con KPIs financieros, embudo comercial y alertas automáticas.",
+          "src": "../../../projects/dashboard-estrategico/media/tablero-general.mp4",
+          "poster": "../../../projects/dashboard-estrategico/media/tablero-general-poster.jpg",
+          "thumbnail": "../../../projects/dashboard-estrategico/media/tablero-general-thumb.jpg"
+        },
+        {
+          "id": "filtros",
+          "type": "video",
+          "title": "Filtros Dinámicos",
+          "description": "Demostración de consultas, drill-down y segmentaciones geográficas en segundos.",
+          "src": "../../../projects/dashboard-estrategico/media/filtros-dinamicos.mp4",
+          "poster": "../../../projects/dashboard-estrategico/media/filtros-dinamicos-poster.jpg",
+          "thumbnail": "../../../projects/dashboard-estrategico/media/filtros-dinamicos-thumb.jpg"
+        },
+        {
+          "id": "responsive",
+          "type": "image",
+          "title": "Responsive Preview",
+          "description": "Previsualizaciones en tablet y móvil con patrones adaptativos y accesibilidad AA.",
+          "src": "../../../projects/dashboard-estrategico/media/responsive-preview.png",
+          "thumbnail": "../../../projects/dashboard-estrategico/media/responsive-preview-thumb.png"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Vista ejecutiva",
+          "description": "Resumen ejecutivo con tendencias, escenarios y notas curadas."
+        },
+        {
+          "title": "Análisis de marketing",
+          "description": "Embudo de conversión, cohortes de usuarios y atribución multicanal."
+        },
+        {
+          "title": "Equipo operativo",
+          "description": "Panel para seguimiento diario con alertas y acciones rápidas."
+        }
+      ]
+    }
+  </script>
+  <script type="module" src="../../../src/sections/ProjectDetail.js"></script>
+  <script type="module" src="../../../src/scripts/main.js"></script>
+</body>
+</html>

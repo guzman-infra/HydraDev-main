@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma Educativa - Hydra404</title>
+  <meta name="description" content="Caso de plataforma educativa full stack creada por Hydra404: gestión de cursos, evaluaciones adaptativas y analítica de progreso.">
+  <link rel="icon" type="image/png" href="../../../assets/img/logo-h404.png">
+  <link rel="stylesheet" href="../../../src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-background-base="../../../assets/fondos/fondo-gral" data-background-formats="jpg,jpeg,png">
+  <div id="app">
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="../../../index.html" class="brand-name" aria-label="Hydra404">
+            <span class="logo-main">HYDRA</span>
+            <span class="logo-sub" aria-hidden="true">404</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../../../index.html" class="nav-link">Inicio</a></li>
+            <li><a href="../../informacion/index.html" class="nav-link">Información</a></li>
+            <li><a href="../index.html" class="nav-link active">Portafolio</a></li>
+            <li><a href="../../contacto/index.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <button class="theme-btn" id="themeToggle" aria-label="Cambiar a tema claro">
+            <div class="theme-icon"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section project-hero" id="inicio">
+        <div class="section-container project-hero__grid">
+          <div class="project-hero__content" data-animate="fade-up">
+            <h1 class="project-title">Plataforma Educativa</h1>
+            <p class="project-lead">Ecosistema de aprendizaje digital con experiencias diferenciadas por rol, evaluaciones adaptativas y analítica de compromiso en tiempo real.</p>
+            <div class="project-hero__cta">
+              <a href="#detalles" class="cta-button primary">Explorar detalles</a>
+              <a href="../index.html" class="cta-button secondary">Volver al portafolio</a>
+            </div>
+          </div>
+          <aside class="project-hero__meta" data-animate="fade-left">
+            <div class="project-meta-card">
+              <span class="project-meta-label">Público</span>
+              <span class="project-meta-value">Instituciones educativas y academias online</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Disponibilidad</span>
+              <span class="project-meta-value">99.97% con despliegues blue/green y CDN global</span>
+            </div>
+            <div class="project-meta-card">
+              <span class="project-meta-label">Stack educativo</span>
+              <ul class="project-meta-list">
+                <li>Microfrontend con Vue 3 y Vite</li>
+                <li>API Node + Prisma sobre PostgreSQL y Redis</li>
+                <li>Motor de evaluaciones adaptativas con TensorFlow</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="detalles">
+        <div class="section-container">
+          <div class="project-overview__grid">
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Experiencias personalizadas</h2>
+              <p class="project-section-text">Construimos viajes diferentes para estudiantes, tutores y administradores.</p>
+              <ul class="project-list">
+                <li>Tableros individuales con progreso, pendientes y recomendaciones.</li>
+                <li>Panel docente con control de cohortes, rúbricas y reuniones.</li>
+                <li>Centro administrativo con calendarios, pagos y reportes.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Contenido y evaluación</h2>
+              <p class="project-section-text">Gestiona recursos, sesiones en vivo y evaluaciones adaptativas.</p>
+              <ul class="project-list">
+                <li>Flujos de carga masiva y versión de recursos.</li>
+                <li>Streaming en vivo con chat moderado y encuestas en tiempo real.</li>
+                <li>Evaluaciones graduadas con retroalimentación inmediata.</li>
+              </ul>
+            </article>
+            <article class="project-overview-card" data-animate="fade-up">
+              <h2 class="project-section-title">Analítica y retención</h2>
+              <p class="project-section-text">Analizamos engagement y riesgos para anticipar deserciones.</p>
+              <ul class="project-list">
+                <li>Métricas de participación, tiempos y puntos críticos.</li>
+                <li>Alertas sobre abandono potencial y planes de seguimiento.</li>
+                <li>Exportaciones automáticas para acreditaciones y QA.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-container">
+          <h2 class="section-title" data-animate="fade-up">Vistas y contenidos</h2>
+          <p class="section-subtitle" data-animate="fade-up">Recorridos funcionales, video demos y galerías para cada rol.</p>
+          <div class="project-media-grid" data-project-media-grid></div>
+          <div class="project-gallery" data-project-highlights></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3 class="footer-logo" aria-label="Hydra404">
+              <span class="logo-main">HYDRA</span>
+              <span class="logo-sub" aria-hidden="true">404</span>
+            </h3>
+            <p class="footer-slogan">Infraestructura de Nivel, Alcance a Medida</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/hydra404_dev" target="_blank" rel="noopener" class="instagram-link">
+              <span class="instagram-icon" aria-hidden="true"></span>
+              @hydra404_dev
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text">&copy; 2024 Hydra404. Todos los derechos reservados.</p>
+          <a href="https://github.com/guzman-dex" target="_blank" rel="noopener" class="footer-creator">Creador de la Web</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="application/json" id="projectMediaData">
+    {
+      "id": "plataforma-educativa",
+      "media": [
+        {
+          "id": "panel-estudiantil",
+          "type": "video",
+          "title": "Panel Estudiantil",
+          "description": "Tour guiado del dashboard estudiantil con rutas de aprendizaje y recordatorios inteligentes.",
+          "src": "../../../projects/plataforma-educativa/media/panel-estudiantil.mp4",
+          "poster": "../../../projects/plataforma-educativa/media/panel-estudiantil-poster.jpg",
+          "thumbnail": "../../../projects/plataforma-educativa/media/panel-estudiantil-thumb.jpg"
+        },
+        {
+          "id": "clase-en-vivo",
+          "type": "video",
+          "title": "Clase en vivo",
+          "description": "Video demostrativo del aula virtual con pizarras colaborativas, chat y reacciones instantáneas.",
+          "src": "../../../projects/plataforma-educativa/media/clase-en-vivo.mp4",
+          "poster": "../../../projects/plataforma-educativa/media/clase-en-vivo-poster.jpg",
+          "thumbnail": "../../../projects/plataforma-educativa/media/clase-en-vivo-thumb.jpg"
+        },
+        {
+          "id": "panel-directivo",
+          "type": "image",
+          "title": "Panel directivo",
+          "description": "Screenshots comparativos con indicadores de retención, NPS y cumplimiento curricular.",
+          "src": "../../../projects/plataforma-educativa/media/panel-directivo.png",
+          "thumbnail": "../../../projects/plataforma-educativa/media/panel-directivo-thumb.png"
+        }
+      ],
+      "highlights": [
+        {
+          "title": "Ruta de aprendizaje",
+          "description": "Mallas dinámicas con prerrequisitos, certificaciones y badges."
+        },
+        {
+          "title": "Espacios sociales",
+          "description": "Foros moderados, mentorías 1:1 y grupos temáticos."
+        },
+        {
+          "title": "Analítica académica",
+          "description": "Informes exportables y comparativas entre cohortes."
+        }
+      ]
+    }
+  </script>
+  <script type="module" src="../../../src/sections/ProjectDetail.js"></script>
+  <script type="module" src="../../../src/scripts/main.js"></script>
+</body>
+</html>
